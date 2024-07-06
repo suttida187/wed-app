@@ -84,7 +84,7 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Laravel ตั้งใจทำนะจ้า
+                Laravel โอเครจ้า
             </div>
 
             <div class="links">
