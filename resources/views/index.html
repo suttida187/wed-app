@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Display Information</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #ffffff;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+       }
+
+
+       #container {
+
+           text-align: center;
+       }
+
+
+       p {
+           font-size: 18px;
+           margin: 10px 0;
+       }
+       .gender{
+        font-size: 60px;
+        color: #FF9292;
+       }
+       .myname{
+            font-size: 25px;
+            font-style: italic;
+            background: linear-gradient(90deg, violet,indigo,orange, yellow, green, blue,violet,red );
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        #date{
+            color: #406E1C	;
+            font-size: 15px;
+        }
+   </style>
+</head>
+<body>
+   <div id="container">
+       <p id="name"  class="myname" >Hello my name is Pilaiwan Satoengram</p>
+       <p id="gender" class="gender">I am female</p>
+       <p id="date"></p>
+   </div>
+   <script>
+  const today = new Date();
+
+
+const day = today.getDate();
+const month = today.toLocaleString('th-TH', { month: 'long' });
+const year = today.getFullYear();
+
+
+const formattedDate = 'วันนี้วันที่ ' + day + ' ' + month + ' พ.ศ. ' + year;
+
+
+document.getElementById('date').innerText = formattedDate;
+
+   </script>
+</body>
+</html>
+
+
